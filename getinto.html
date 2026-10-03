@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sxge</title>
-    <link rel="stylesheet" href="./styles2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getintopc</title>
+  <link rel="stylesheet" href="./styles2.css">
 </head>
 <body>
 
-<img src="image2.PNG" class="screenget" alt="Sxge Preview">
+  <main class="box">
+    <img
+      src="./image2.PNG"
+      class="screenget"
+      alt="Sxge Preview"
+    >
 
-<div class="box"></div>
+    <div class="content">
+      <h1 class="text">INTRODUCING</h1>
 
-<h3 class="text">INTRODUCING</h3>
+      <p class="text1">
+        GetIntoPC is a popular third-party download website that
+        provides free, pre-activated, or cracked versions of paid
+        commercial software for Windows. It operates as a massive
+        archive where users can find full offline installers for a
+        wide range of applications without needing to register or pay.
+      </p>
 
-<h2 class="text1">
-GetIntoPC is a popular<br> third-party download website that provides free, pre-activated, or cracked versions of paid <br>commercial software for Windows.<br> It operates as a massive archive <br>where users can find full offline installers for a<br> wide range of applications without needing to register or pay.
-</h2>
+      <div class="button-card" id="download-card">
+        <button
+          class="close"
+          type="button"
+          aria-label="Close link card"
+        >
+          &times;
+        </button>
 
-<div class="button-card">
-    <span class="close">&times;</span>
-    <a href="https://getintopc.com/" class="card-text">Link to Getintopc</a>
-</div>
+        <a href="https://getintopc.com/" class="card-text">
+          Link to GetIntoPC
+        </a>
+      </div>
 
-<h3 class="text2">
-    <a href="sxge.html"></a>
-</h3>
+      <footer class="text2">
+        <a href="./sxge.html">Back</a>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    document.querySelector(".close").addEventListener("click", () => {
+      document.getElementById("download-card").remove();
+    });
+  </script>
 
 </body>
 </html>
