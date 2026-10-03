@@ -1,0 +1,112 @@
+.screensteam {
+  position: absolute;
+  top: 0px;
+  left: 627px;
+
+  width: 1275px;
+  height: 600px;
+
+  mask-image: linear-gradient(180deg, black 100%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, black 60%, transparent 100%);
+
+  object-fit: cover;
+
+  border-radius: 15px;
+  z-index: 20;
+  display: block;
+}
+
+
+
+
+
+.box{
+ position: absolute;
+ 
+ top: 0px;
+ left: 625px;
+ 
+  width: 1280px;
+  height:1325px;
+
+  background-color: #14082D;
+ 
+  border-radius: 12px;
+
+
+  z-index: 11}
+
+.text{
+    position: absolute;
+
+  top: 600px;
+  left: 650px;
+
+  z-index: 30;
+
+  font-family: "Segoe UI Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+ color: white; }
+
+
+ .text1{
+    position: absolute;
+
+  top: 635px;
+  left: 650px;
+
+  z-index: 30;
+
+  font-family: "Segoe UI Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+ color: white; }
+
+/* Card Container */
+.button-card {
+  position: absolute;
+  top: 800px;
+  left: 660px;
+  width: 1200px;
+  height: 300px;
+  background-color: #0c0c0c;
+  border-radius: 12px;
+  z-index: 21;
+
+  /* Flexbox to center the main text inside the card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text styling inside the card */
+.card-text {
+  font-family: "Segoe UI Bold", sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none; /* Removes underline */
+}
+
+/* Optional hover effect */
+.card-text:hover {
+  text-decoration: underline;
+  color: #cccccc;
+}
+
+/* Close button inside top-right of the card */
+
+ .text2{
+    position: absolute;
+
+  top: 1250px;
+  left: 1750px;
+
+  z-index: 30;
+
+  font-family: "Segoe UI Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+ color: white; }
+
