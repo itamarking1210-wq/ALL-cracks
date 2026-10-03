@@ -1,52 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sxge</title>
-  <link rel="stylesheet" href="./styles2.css">
-</head>
-<body>
-  <main class="box">
-    <img
-      src="./image2.PNG"
-      class="screenget"
-      alt="Sxge Preview"
-    >
+* {
+  box-sizing: border-box;
+}
 
-    <div class="content">
-      <h1 class="text">INTRODUCING</h1>
+body {
+  margin: 0;
+  padding: 24px;
+  background-color: #0a0e18;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
 
-      <p class="text1">
-        GetIntoPC is a third-party download website that offers
-        Windows software installers, including pre-activated or
-        cracked versions of paid commercial software.
-      </p>
+.box {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #677c86;
+  border-radius: 15px;
+}
 
-      <div class="button-card" id="download-card">
-        <button
-          class="close"
-          type="button"
-          aria-label="Close link card"
-        >
-          &times;
-        </button>
+.screenget {
+  display: block;
+  width: 100%;
+  height: clamp(240px, 45vw, 600px);
+  object-fit: cover;
 
-        <a href="https://getintopc.com/" class="card-text">
-          Link to GetIntoPC
-        </a>
-      </div>
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    black 60%,
+    transparent 100%
+  );
 
-      <footer class="text2">
-        <a href="./index.html">Back</a>
-      </footer>
-    </div>
-  </main>
+  mask-image: linear-gradient(
+    180deg,
+    black 60%,
+    transparent 100%
+  );
+}
 
-  <script>
-    document.querySelector(".close").addEventListener("click", () => {
-      document.getElementById("download-card").remove();
-    });
-  </script>
-</body>
-</html>
+.content {
+  padding: 24px 32px 32px;
+}
+
+.text {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.text1 {
+  max-width: 900px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.button-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  margin-top: 40px;
+  padding: 64px 24px;
+  background-color: #0c0c0c;
+  border-radius: 12px;
+}
+
+.card-text {
+  color: white;
+  font-size: clamp(28px, 6vw, 80px);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.card-text:hover {
+  color: #cccccc;
+  text-decoration: underline;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: #292929;
+}
+
+.text2 {
+  margin-top: 40px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.text2 a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .text1 {
+    font-size: 18px;
+  }
+
+  .button-card {
+    min-height: 200px;
+    margin-top: 28px;
+  }
+}
